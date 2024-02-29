@@ -10,6 +10,19 @@
  *
 */
 
+h1 + h2 {
+    margin-top: 20px; /* Reduces the space between h1 and h2 */
+}
+
+// h1, h2, h3, h4, h5, h6 {
+//     margin-top: 5px; /* Adjust the value as needed */
+//     margin-bottom: 5px; /* Adjust the value as needed */
+// }
+
+.tight-top-margin {
+    margin-top: 10px;
+}
+
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "mixins";
