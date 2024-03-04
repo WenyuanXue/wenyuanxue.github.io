@@ -7,29 +7,56 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year CEE Ph.D. student at Stanford. I am interested in the complex physics of nature such as fluid mechanics, solid mechanics and fluid-solid interaction as well as the application of numerical methods to model, predict and understand their fundamental mechanisms. I am currently advised by Prof. [Oliver Fringer](https://web.stanford.edu/~fringer/) and collaborating with Prof. [Yinuo Yao](https://yao-mp-lab.github.io/).
+I am a first-year CEE Ph.D. student at Stanford. My interest lies in the complex physics of nature, including fluid mechanics, solid mechanics, and fluid-solid interactions, as well as applying numerical methods to model, predict, and understand their fundamental mechanisms. I am currently advised by Prof. [Oliver Fringer](https://web.stanford.edu/~fringer/) and collaborating with Prof. [Yinuo Yao](https://yao-mp-lab.github.io/).
 
 # Biography
 Please refer to my [CV](../files/CV.pdf).
 
 
 # Research
-## Particle-resolved simulation of particle-laden flows
-Direct numerical simulation of particle-laden flows is a powerful tool to understand and visualize the process of particle-fluid and particle-particle interaction. We peformed numerical studies based on a particle-resolved solver ([Yao et al. 2022](https://onlinelibrary.wiley.com/doi/abs/10.1002/fld.5128)). The solver uses Immersed boundary method to connect the Eulerian and Lagrangian field and adopted physical-based collision models for the particle collisions.
 
-### The drafting, kissing and tumbling (DKT) process of two particles
-<div align="center">
-  <figure style="display: inline-block; margin-right: 20px; width: 150px; text-align: center;">
-    <img src="/images/rho2_1.5.gif" width="150" >
-    <!-- <figcaption style="font-size: 0.8em;">Same particle density</figcaption> -->
+## Particle-resolved simulation of particle-laden flows
+Direct numerical simulation (DNS) of particle-laden flows is a valuable tool for understanding and visualizing of particle-fluid and particle-particle interactions. We conducted numerical studies using an in-house particle-resolved simulation (PRS) solver ([Yao et al. 2022](https://onlinelibrary.wiley.com/doi/abs/10.1002/fld.5128)), which empolys the immersed boundary method to couple the Eulerian and Lagrangian fields and incorporates physical-based collision models for the particle collisions. Using this solver, several fluid-particle interaction cases were studied and presented below.
+
+### Sedimentation of uniformly distributed particles
+Sedimentation is the process of particles suspended settle out of the fluid due to gravity or other forces acting on them. It plays an important role in in wastewater treatment and deposition of sediments in river and estuaries. 
+
+For numerical studies, we examine the sedimentation of a single partile in a 3D triply-periodic domain. The particle's diameter is set at $$0.16m$$ with the particle Reynolds number $$ Re_{\tau} \approx 1.6$$. We investigated the influence of particle distance on its terminal velocity by considering domain sizes of $$ 2.56\times 2.56\times 0.64m$$, $$ 2.56\times 2.56\times 1.28m$$ and $$ 1.28\times 1.28\times 1.28m$$. The grid size is uniformly $$0.02m$$ in all directions. Using the PRS, we plotted the contour of vorticity and compared the time histories of velocity with the analytical value predicted by the Stokes' Law. The analysis reveals that reducing the vertical distance increases the terminal velocity, as the drag is reduced when particles are closely aligned vertically. Conversely, reducing the horizontal distance reduces the terminal velocity as the flow between the particles is accelerated.
+
+<div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+  <figure style="margin: 0; width: 250px; text-align: center;">
+    <img src="/images/nu0.1_X2.56_Z2.56.gif" width="250px" style="display: block; margin: auto;">
+    <figcaption style="font-size: 0.75em; text-align: center; width: 100%; margin-top: 10px; margin-bottom: 20px;">Sedimentation on grid \(2.56\times 2.56\times 2.56m\)</figcaption>
   </figure>
-  <figure style="display: inline-block; margin-right: 20px; width: 150px; text-align: center;">
-    <img src="/images/rho2_1.4.gif" width="150" >
-    <!-- <figcaption style="font-size: 0.8em;">Bottom particle lighter</figcaption> -->
+</div>
+
+
+<div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+  <figure style="margin: 0; width: 400px; text-align: center;">
+    <img src="/images/stokes.png" width="400px">
+    <figcaption style="font-size: 0.8em; text-align: center; width: 100%;; margin-bottom: 0px;">Influence of particle distances</figcaption>
   </figure>
-  <figure style="display: inline-block; width: 150px; text-align: center;">
-    <img src="/images/d0.026_rho2_1.25.gif" width="150" >
-    <!-- <figcaption style="font-size: 0.8em;">Large horizontal distance</figcaption> -->
+</div>
+
+
+### The drafting, kissing and tumbling process of two particles
+The drafting, kissing and tumbling (DKT) process describes the dynamics and interactions between two particles moving in a fluid medium. Initially, the trailing particle accelerates as it enters the wake of the leading particle. Once the trailing particle catches up, it may collide with the leading particle and finally move away from it. The DKT process is influenced by the geometry of the system, the properties of the fluid, and the elastic and collision behaviors of particles. 
+
+We used the PRS to investigate the influence of the initial position of particles and their densities. Simulations were conducted in a 2D domain of $$2 \times 6m$$, and the diameter of the particles was $$0.25m$$. The grid was set to $$512 \times 1536$$. The contour plots of vorticity along with the particles are plotted below. In the reference case (a), the two particles have a density of $$\rho_p = 1500kg/m^3 $$ with an initial lateral distance of $$0.005m$$. For case(b), the density of the leading particle is changed to $$\rho_p = 1400kg/m^3$$. It is observed that the two particles do not separate before hitting the ground. For case(c), we change the initial lateral distance to $$0.25m$$. Remarkably, the trailing particle was still drawn into the wake of the leading particle and collided with it.
+
+
+<div align="center" style="display: flex; align-items: start; justify-content: center;">
+  <figure style="margin-right: 30px; width: 150px; text-align: center;">
+    <img src="/images/d0.005_rho2_1.5.gif" width="200">
+    <figcaption style="font-size: 0.8em">(a) Reference case</figcaption>
+  </figure>
+  <figure style="margin-right: 30px; width: 150px; text-align: center;">
+    <img src="/images/d0.005_rho2_1.4.gif" width="200">
+    <figcaption style="font-size: 0.8em">(b) Leading particle lighter</figcaption>
+  </figure>
+  <figure style="width: 150px; text-align: center;">
+    <img src="/images/d0.25_rho2_1.5.gif" width="200">
+    <figcaption style="font-size: 0.8em">(c) Larger horizontal distance</figcaption>
   </figure>
 </div>
 
