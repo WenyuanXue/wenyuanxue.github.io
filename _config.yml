@@ -25,7 +25,7 @@ author:
   name             : "Wenyuan Xue"
   pronouns         : "He/him/his" 
   bio              : "First-year CEE Ph.D. student"
-  location         : "Palo Alto"
+  location         : " Palo Alto"
   employer         : "Stanford University"
   uri              : # URL
   email            : "wxue@stanford.edu" 
@@ -134,10 +134,10 @@ social:
 
 
 # Analytics
-analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "google-analytics-4", "custom"
-  google:
-    tracking_id          :
+# analytics:
+#   provider               :  "google-universal" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+#   google:
+#     tracking_id          :
 
 
 # Reading Files
