@@ -62,7 +62,7 @@ We used the PRS to investigate the influence of the initial positions of particl
 ### Sediment transport
 Sediment transport refers to the movement of sediment particles by water across the Earth's surface. This fundamental geophysical process plays a crucial role in shaping landscapes, as well as in the formation of river channels and estuaries. Particle-resolved solvers provide us a detailed understanding of the sediment transport process, by directly modeling the fluid-particle interaction and particle-particle collision.
 
-We utilized the PRS to investigate the movement of a particle along coarse riverbed. The 2D computation domain was set as $$2.5 \times 1.25m$$ with a grid resolution of $$ 512 \times 256 $$ and it is periodic in $$x$$-direction. The riverbed was modeled with uniform, fixed particles. We imposed a free-slip boundary condition at the top. The diameter of the particles was $$0.25m$$. Two cases of particle density were considered: $$\rho_p = 1100, 1200kg/m^3 $$. Initially, the fluid was static, then a particle was released and a constant pressure gradient of $$ \frac{\partial p}{\partial  x} = -1000 Pa/m$$ was applied. The contour plot of $$x$$-velocity along with the particles are plotted below. 
+We utilized the PRS to investigate the movement of a particle along coarse riverbed. The 2D computation domain was set as $$2.5 \times 1.25m$$ with a grid resolution of $$ 512 \times 256 $$ and it is periodic in $$x$$-direction. The riverbed was modeled with uniform, fixed particles. We imposed a free-slip boundary condition at the top. The diameter of the particles was $$0.25m$$. Three cases of particle density were considered: $$\rho_p = 1100, 1200, 1300kg/m^3 $$. Initially, the fluid was static, then a particle was released and a constant pressure gradient of $$ \frac{\partial p}{\partial  x} = -1000 Pa/m$$ was applied. The contour plot of $$x$$-velocity along with the particles are plotted below. 
 
 <div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
   <figure style="margin: 0; width: 500px; text-align: center;">
@@ -75,6 +75,13 @@ We utilized the PRS to investigate the movement of a particle along coarse river
   <figure style="margin: 0; width: 500px; text-align: center;">
     <img src="/images/st_rho1.2_f1000.gif" width="500px" style="display: block; margin: auto;">
     <figcaption style="font-size: 0.75em; text-align: center; width: 100%; margin-top: 10px; margin-bottom: 20px;">$$\rho_p = 1200kg/m^3 $$</figcaption>
+  </figure>
+</div>
+
+<div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+  <figure style="margin: 0; width: 500px; text-align: center;">
+    <img src="/images/st_rho1.3_f1000.gif" width="500px" style="display: block; margin: auto;">
+    <figcaption style="font-size: 0.75em; text-align: center; width: 100%; margin-top: 10px; margin-bottom: 20px;">$$\rho_p = 1300kg/m^3 $$</figcaption>
   </figure>
 </div>
 
