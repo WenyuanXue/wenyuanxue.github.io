@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year CEE Ph.D. student at Stanford University. My interest lies in the complex physics of nature, including fluid mechanics, solid mechanics, and fluid-solid interactions, as well as applying numerical methods to model, predict, and understand their fundamental mechanisms. Currently, I am advised by Prof. [Oliver Fringer](https://web.stanford.edu/~fringer/) and collaborating with Prof. [Yinuo Yao](https://yao-mp-lab.github.io/).
+I am a first-year CEE Ph.D. student at Stanford University. My research interests lie in the complex physics of nature, including fluid mechanics, solid mechanics, and fluid-solid interactions, as well as applying numerical methods to model, predict, and understand their fundamental mechanisms. Currently, I am advised by Prof. [Oliver Fringer](https://web.stanford.edu/~fringer/) and collaborating with Prof. [Yinuo Yao](https://yao-mp-lab.github.io/).
 
 <div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
   <figure style="margin: 0; width: 300px; text-align: center;">
@@ -67,9 +67,18 @@ We used the PRS to investigate the influence of the initial positions of particl
 ### Sediment transport
 Sediment transport refers to the movement of sediment particles by water across the Earth's surface. This fundamental geophysical process plays a crucial role in shaping landscapes, as well as in the formation of river channels and estuaries. Particle-resolved solvers provide us a detailed understanding of the sediment transport process, by directly modeling the fluid-particle interaction and particle-particle collision.
 
-We utilized the PRS to investigate the movement of a particle along a coarse channel. The 2D computation domain was set as $$10 d_p \times 10d_p$$ with a grid resolution of $$ 512 \times 256 $$ and it is periodic in $$x$$-direction. The bottom of the channel was modeled with uniform, fixed particles. We also imposed a no-slip boundary condition at the top. Three cases of particle density were considered: $$\rho_p = 1.1, 1.2, 1.3 \rho_f $$. Initially, the fluid and particles were static, then a constant pressure gradient of $$ \frac{\partial p}{\partial  x} = - 0.1 \rho_f g$$ was applied, which gives shear velocity $$ u_{\tau} = 6.32d_p /s $$. During the simulation, the maximum particle Reynolds number $$ Re_{\tau} \approx 100$$. The contour plot of $$x$$-velocity along with the particle movement are plotted below. 
+We utilized the PRS to investigate the movement of a particle along a coarse channel. The 2D computation domain was set as $$10 d_p \times 10d_p$$ with a grid resolution of $$ 512 \times 256 $$ and it is periodic in $$x$$-direction. The bottom of the channel was modeled with uniform, fixed particles. We also imposed a no-slip boundary condition at the top. The particle's density is $$\rho_p = 1.5 \rho_f $$. Initially, the fluid and particles were static, then a constant pressure gradient of $$ \frac{\partial p}{\partial  x} $$ was applied, which gives shear velocity $$ u_{\tau} = 6.32d_p /s $$. During the simulation, the maximum particle Reynolds number $$ Re_{\tau} \approx 100$$. The contour plot of $$x$$-velocity along with the particle movement are plotted below. 
 
 <div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+  <figure style="margin: 0; width: 500px; text-align: center;">
+    <img src="/images/ct_p1_rho1.5_f1000.gif" width="500px" style="display: block; margin: auto;">
+    <!-- <figcaption style="font-size: 0.75em; text-align: center; width: 100%; margin-top: 10px; margin-bottom: 20px;">$$\rho_p = 1.1 \rho_f $$</figcaption> -->
+  </figure>
+</div>
+
+
+
+<!-- <div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
   <figure style="margin: 0; width: 500px; text-align: center;">
     <img src="/images/st_rho1.1_f1000.gif" width="500px" style="display: block; margin: auto;">
     <figcaption style="font-size: 0.75em; text-align: center; width: 100%; margin-top: 10px; margin-bottom: 20px;">$$\rho_p = 1.1 \rho_f $$</figcaption>
@@ -88,7 +97,7 @@ We utilized the PRS to investigate the movement of a particle along a coarse cha
     <img src="/images/st_rho1.3_f1000.gif" width="500px" style="display: block; margin: auto;">
     <figcaption style="font-size: 0.75em; text-align: center; width: 100%; margin-top: 10px; margin-bottom: 20px;">$$\rho_p = 1.3\rho_f  $$</figcaption>
   </figure>
-</div>
+</div> -->
 
 # Coursework
 ## Fluid mechanics
