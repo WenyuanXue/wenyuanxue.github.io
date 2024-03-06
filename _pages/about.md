@@ -11,7 +11,7 @@ I am a first-year CEE Ph.D. student at Stanford University. My research interest
 
 <div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
   <figure style="margin: 0; width: 300px; text-align: center;">
-    <img src="/images/d0.005_rho2_1.4_rot.gif" width="300px">
+    <img src="/images/d0.002_rho1_2.5_rot.gif" width="300px">
   </figure>
 </div>
 
@@ -26,7 +26,7 @@ Direct numerical simulation (DNS) of particle-laden flows is a powerful tool for
 ### Sedimentation of uniformly distributed particles
 Sedimentation is the process by which suspended particles settle out of the fluid due to gravity or other forces acting on them. It plays an important role in in wastewater treatment and deposition of sediments in river and estuaries. 
 
-In our numerical studies, we examine the sedimentation of a single particle in a 3D triply-periodic domain. We investigated the influence of particle distance on its terminal velocity by considering domain sizes of $$ 16 d_p\times 16 d_p\times 4 d_p$$, $$ 16 d_p\times 16 d_p\times 8 d_p$$ and $$ 8 d_p\times 8 d_p\times 8 d_p $$, where $$d_p$$ is the particle's diameter. The grid size is uniformly $$1/8 d_p $$ in all directions. The particle Reynolds number $$ Re_{\tau} \approx 1.6$$. Using the PRS, we plotted the contour of vorticity and compared the time histories of velocity with the analytical value predicted by the Stokes' Law. The analysis shows that reducing the vertical distance increases the terminal velocity, as the drag is reduced when particles are closely aligned vertically. Conversely, reducing the horizontal distance decreases the terminal velocity, as the flow between the particles is accelerated.
+In our numerical studies, we examine the sedimentation of a single particle in a 3D triply-periodic domain. We investigated the influence of particle distance on its terminal velocity by considering domain sizes of $$ 16 d_p\times 16 d_p\times 4 d_p$$, $$ 16 d_p\times 16 d_p\times 8 d_p$$ and $$ 8 d_p\times 8 d_p\times 8 d_p $$, where $$d_p$$ is the particle's diameter. The grid size is uniformly $$1/8 d_p $$ in all directions. The particle Reynolds number $$ Re_{p} \approx 1.6$$. Using the PRS, we plotted the contour of vorticity and compared the time histories of velocity with the analytical value predicted by the Stokes' Law. The analysis shows that reducing the vertical distance increases the terminal velocity, as the drag is reduced when particles are closely aligned vertically. Conversely, reducing the horizontal distance decreases the terminal velocity, as the flow between the particles is accelerated.
 
 <div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
   <figure style="margin: 0; width: 250px; text-align: center;">
@@ -67,12 +67,20 @@ We used the PRS to investigate the influence of the initial positions of particl
 ### Sediment transport
 Sediment transport refers to the movement of sediment particles by water across the Earth's surface. This fundamental geophysical process plays a crucial role in shaping landscapes, as well as in the formation of river channels and estuaries. Particle-resolved solvers provide us a detailed understanding of the sediment transport process, by directly modeling the fluid-particle interaction and particle-particle collision.
 
-We utilized the PRS to investigate the movement of a particle along a coarse channel. The 2D computation domain was set as $$10 d_p \times 10d_p$$ with a grid resolution of $$ 512 \times 256 $$ and it is periodic in $$x$$-direction. The bottom of the channel was modeled with uniform, fixed particles. We also imposed a no-slip boundary condition at the top. The particle's density is $$\rho_p = 1.5 \rho_f $$. Initially, the fluid and particles were static, then a constant pressure gradient of $$ \frac{\partial p}{\partial  x} $$ was applied, which gives shear velocity $$ u_{\tau} = 6.32d_p /s $$. During the simulation, the maximum particle Reynolds number $$ Re_{\tau} \approx 100$$. The contour plot of $$x$$-velocity along with the particle movement are plotted below. 
+We utilized the PRS to investigate the movement of a particle along a coarse channel. The computation domain was 2D and was set as $$10 d_p \times 10d_p$$ with a grid resolution of $$ 512 \times 512 $$. It is periodic in the $$x$$-direction. The bottom of the channel was modeled with uniform, fixed particles. We also imposed a no-slip boundary condition at the top. The particle density was set at $$\rho_p = 1.5 \rho_f $$. The horizontal particle spacing was $$L = 10d_p$$. Initially, both the fluid and particles were static, then a constant pressure gradient $$ \frac{\partial p}{\partial  x} $$ was applied. Three cases of pressure gradient were considered, and the corresponding boundary Reynolds numbers $$Re_{\tau}$$, defined as $$ Re_{\tau} = \frac{u_{\tau} d_p}{\nu} = \frac{d_p}{\nu} \sqrt{-\frac{1}{\rho_f} \frac{\partial p}{\partial  x} H} $$, were equal to $$28, 35, 56$$. The $$x$$-velocity profiles and the particle movement are plotted below. 
 
-<div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
-  <figure style="margin: 0; width: 500px; text-align: center;">
-    <img src="/images/ct_p1_rho1.5_f1000.gif" width="500px" style="display: block; margin: auto;">
-    <!-- <figcaption style="font-size: 0.75em; text-align: center; width: 100%; margin-top: 10px; margin-bottom: 20px;">$$\rho_p = 1.1 \rho_f $$</figcaption> -->
+<div align="center" style="display: flex; align-items: start; justify-content: center;">
+  <figure style="margin-right: 20px; width: 200px; text-align: center;">
+    <img src="/images/ct_rho1.5_f500.gif" width="200px" style="display: block; margin: auto;">
+    <figcaption style="font-size: 0.75em; text-align: center; width: 100%;">$$ Re_{\tau} = 28  $$</figcaption>
+  </figure>
+  <figure style="margin-right: 20px; width: 200px; text-align: center;">
+    <img src="/images/ct_rho1.5_f1000.gif" width="200px" style="display: block; margin: auto;">
+    <figcaption style="font-size: 0.75em; text-align: center; width: 100%;">$$ Re_{\tau} = 35  $$</figcaption>
+  </figure>
+  <figure style=" width: 200px; text-align: center;">
+    <img src="/images/ct_rho1.5_f2000.gif" width="200px" style="display: block; margin: auto;">
+    <figcaption style="font-size: 0.75em; text-align: center; width: 100%;">$$ Re_{\tau} = 56  $$</figcaption>
   </figure>
 </div>
 
