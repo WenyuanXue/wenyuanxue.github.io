@@ -11,7 +11,7 @@ I am a first-year CEE Ph.D. student at Stanford University. My research interest
 
 <div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
   <figure style="margin: 0; width: 300px; text-align: center;">
-    <img src="/images/d0.002_rho1_2.5_rot.gif" width="300px">
+    <img src="/images/PRS/d0.002_rho1_2.5_rot.gif" width="300px">
   </figure>
 </div>
 
@@ -30,7 +30,7 @@ In our numerical studies, we examine the sedimentation of a single particle in a
 
 <div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
   <figure style="margin: 0; width: 250px; text-align: center;">
-    <img src="/images/nu0.1_X2.56_Z2.56.gif" width="250px" style="display: block; margin: auto;">
+    <img src="/images/Particle_laden_flow/nu0.1_X2.56_Z2.56.gif" width="250px" style="display: block; margin: auto;">
     <figcaption style="font-size: 0.75em; text-align: center; width: 100%; margin-top: 10px; margin-bottom: 20px;">Sedimentation on grid \(16 d_p\times 16 d_p\times 16 d_p\)</figcaption>
   </figure>
 </div>
@@ -38,7 +38,7 @@ In our numerical studies, we examine the sedimentation of a single particle in a
 
 <div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
   <figure style="margin: 0; width: 400px; text-align: center;">
-    <img src="/images/stokes.png" width="400px">
+    <img src="/images/PRS/stokes.png" width="400px">
     <figcaption style="font-size: 0.8em; text-align: center; width: 100%;; margin-bottom: 0px;">Influence of distances between particles </figcaption>
   </figure>
 </div>
@@ -50,15 +50,15 @@ The drafting, kissing and tumbling (DKT) process describes the dynamics and inte
 We used the PRS to investigate the influence of the initial positions of particles and their densities. Simulations were performed in a 2D domain of $$ 8 d_p \times 24 d_p$$, where $$d_p$$ is the particle's diameter. The grid was set to $$512 \times 1536$$. The contour plots of vorticity along with the particles during the DKT process are plotted below. In the reference case (a), both particles have a density of $$\rho_p = 1.5 \rho_f $$ with an initial lateral distance of $$0.02 d_p$$. For case (b), the density of the leading particle is changed to $$\rho_p = 1.4 \rho_f$$. It is observed that the two particles do not separate before hitting the ground. For case(c), we increase the initial lateral distance to $$1 d_p$$. Remarkably, the trailing particle was still drawn into the wake of the leading particle and collided with it.
 <div align="center" style="display: flex; align-items: start; justify-content: center;">
   <figure style="margin-right: 30px; width: 150px; text-align: center;">
-    <img src="/images/d0.005_rho2_1.5.gif" width="200">
+    <img src="/images/PRS/d0.005_rho2_1.5.gif" width="200">
     <figcaption style="font-size: 0.8em">(a) Reference case</figcaption>
   </figure>
   <figure style="margin-right: 30px; width: 150px; text-align: center;">
-    <img src="/images/d0.005_rho2_1.4.gif" width="200">
+    <img src="/images/PRS/d0.005_rho2_1.4.gif" width="200">
     <figcaption style="font-size: 0.8em">(b) Leading particle lighter</figcaption>
   </figure>
   <figure style="width: 150px; text-align: center;">
-    <img src="/images/d0.25_rho2_1.5.gif" width="200">
+    <img src="/images/PRS/d0.25_rho2_1.5.gif" width="200">
     <figcaption style="font-size: 0.8em">(c) Larger horizontal distance</figcaption>
   </figure>
 </div>
@@ -71,41 +71,40 @@ We utilized the PRS to investigate the movement of a particle along a coarse cha
 
 <div align="center" style="display: flex; align-items: start; justify-content: center;">
   <figure style="margin-right: 20px; width: 200px; text-align: center;">
-    <img src="/images/ct_rho1.5_f500.gif" width="200px" style="display: block; margin: auto;">
+    <img src="/images/PRS/ct_rho1.5_f500.gif" width="200px" style="display: block; margin: auto;">
     <figcaption style="font-size: 0.75em; text-align: center; width: 100%;">$$ Re_{\tau} = 28  $$</figcaption>
   </figure>
   <figure style="margin-right: 20px; width: 200px; text-align: center;">
-    <img src="/images/ct_rho1.5_f1000.gif" width="200px" style="display: block; margin: auto;">
+    <img src="/images/PRS/ct_rho1.5_f1000.gif" width="200px" style="display: block; margin: auto;">
     <figcaption style="font-size: 0.75em; text-align: center; width: 100%;">$$ Re_{\tau} = 35  $$</figcaption>
   </figure>
   <figure style=" width: 200px; text-align: center;">
-    <img src="/images/ct_rho1.5_f2000.gif" width="200px" style="display: block; margin: auto;">
+    <img src="/images/PRS/ct_rho1.5_f2000.gif" width="200px" style="display: block; margin: auto;">
     <figcaption style="font-size: 0.75em; text-align: center; width: 100%;">$$ Re_{\tau} = 56  $$</figcaption>
   </figure>
 </div>
 
 
+## Phase field fracture modeling of anisotropic incompressible biological tissues
 
-<!-- <div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
-  <figure style="margin: 0; width: 500px; text-align: center;">
-    <img src="/images/st_rho1.1_f1000.gif" width="500px" style="display: block; margin: auto;">
-    <figcaption style="font-size: 0.75em; text-align: center; width: 100%; margin-top: 10px; margin-bottom: 20px;">$$\rho_p = 1.1 \rho_f $$</figcaption>
+The studying and modeling of fracture behavior of soft biological tissues are critical for advancing our understanding of disease mechanisms, improving injury prevention, and enhancing surgical treatments. The challenge in accurately predicting the behavior of these tissues lies in their anisotropic and incompressible nature. 
+
+In this study, We propose a new model for soft biological tissues that integrates the three-field mixed formulation and the phase field fracture model. The HGO model is adopted to discrible hyperelatic behavior. Anisotropy is incorporated through an anisotropic energy-based failure criterion, while the augmented Lagrangian iterations are implemented to enforce incompressibility. We demonstrate the applicability of our proposed model through the analysis of a notched strip subjected to uniaxial loading. As is shown below, the volumetric deformation remains small in the undamged region throughout the fracture process. Furthermore, we find that the augmented Lagrangian iterations has first-order convergence in certain scenarios, which aligns with the numerical results.
+
+<div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+  <figure style="margin: 0; width: 450px; text-align: center;">
+    <img src="/images/Tissue_fracture/fracture_process.png" width="450px">
+    <figcaption style="font-size: 0.8em; text-align: center; width: 100%;; margin-bottom: 0px;">Fracture process and contours of damage and volumetric deformation </figcaption>
   </figure>
 </div>
 
-<div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
-  <figure style="margin: 0; width: 500px; text-align: center;">
-    <img src="/images/st_rho1.2_f1000.gif" width="500px" style="display: block; margin: auto;">
-    <figcaption style="font-size: 0.75em; text-align: center; width: 100%; margin-top: 10px; margin-bottom: 20px;">$$\rho_p = 1.2 \rho_f  $$</figcaption>
-  </figure>
-</div>
 
 <div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
-  <figure style="margin: 0; width: 500px; text-align: center;">
-    <img src="/images/st_rho1.3_f1000.gif" width="500px" style="display: block; margin: auto;">
-    <figcaption style="font-size: 0.75em; text-align: center; width: 100%; margin-top: 10px; margin-bottom: 20px;">$$\rho_p = 1.3\rho_f  $$</figcaption>
+  <figure style="width: 350px; text-align: center;">
+    <img src="/images/Tissue_fracture/AL_cvg_numerical.png" width="350px">
+    <figcaption style="font-size: 0.8em; text-align: center; width: 100%;; margin-bottom: 0px;">Convergence of augmented Lagrangian iterations </figcaption>
   </figure>
-</div> -->
+</div>
 
 # Coursework
 ## Fluid mechanics
