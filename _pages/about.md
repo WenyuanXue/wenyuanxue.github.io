@@ -1,11 +1,13 @@
 ---
+layout: default
+title: Home
 permalink: /
-title: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
 
 I am a first-year CEE Ph.D. student at Stanford University. My research interests lie in the complex physics of nature, including fluid mechanics, solid mechanics, and fluid-solid interactions, as well as applying numerical methods to model, predict, and understand their fundamental mechanisms. Currently, I am advised by Prof. [Oliver Fringer](https://web.stanford.edu/~fringer/) and collaborating with Prof. [Yinuo Yao](https://yao-mp-lab.github.io/).
 
