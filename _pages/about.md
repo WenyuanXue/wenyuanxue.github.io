@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year CEE Ph.D. student at Stanford University. My research interests lie in the complex physics of nature, including fluid mechanics, solid mechanics, and fluid-solid interactions, as well as applying numerical methods to model, predict, and understand their fundamental mechanisms. Currently, I am advised by Prof. [Oliver Fringer](https://web.stanford.edu/~fringer/) and collaborating with Prof. [Yinuo Yao](https://yao-mp-lab.github.io/).
+I am a Ph.D. student in Mechanical Engineering at Stanford University. My research interests focus on data-driven reduced-order modeling of PDEs and Reynolds stress modeling of turbulent flows. Currently, I am advised by Prof. [Ali Mani](https://mani.stanford.edu/) and have previously worked with Prof. [Oliver Fringer](https://web.stanford.edu/~fringer/) and Prof. [Christian Linder](https://web.stanford.edu/~linder/).
 
 <div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
   <figure style="margin: 0; width: 300px; text-align: center;">
@@ -19,6 +19,10 @@ I am a first-year CEE Ph.D. student at Stanford University. My research interest
 For more detailed information, please consult my  [CV](../files/CV.pdf).
 
 # Research
+
+## Data-driven Reduced-order Modeling of PDEs
+
+My current research focuses on developing physics-informed, data-driven methods for identifying closure models in turbulent flows. I work on optimizing pseudo-spectral DNS/LES solvers and constructing minimal tensorial formulations of Reynolds stress models to study the influence of rotation on homogeneous anisotropic turbulence.
 
 ## Particle-resolved Simulation of Particle-laden Flows
 Direct numerical simulation (DNS) of particle-laden flows is a powerful tool for understanding and visualizing particle-fluid and particle-particle interactions. We conducted numerical studies using an in-house particle-resolved simulation (PRS) solver ([Yao et al. 2022](https://onlinelibrary.wiley.com/doi/abs/10.1002/fld.5128)), which employs the immersed boundary method to couple Eulerian and Lagrangian fields and incorporates physical-based collision models for the particle collisions. Using this solver, several cases of fluid-particle interactions were studied and presented below.
@@ -105,6 +109,13 @@ In this study, We propose a new model for soft biological tissues that integrate
     <figcaption style="font-size: 0.8em; text-align: center; width: 100%;; margin-bottom: 0px;">Convergence of augmented Lagrangian iterations </figcaption>
   </figure>
 </div>
+
+# Teaching Experience
+
+I have served as a Course Assistant for several courses at Stanford University:
+
+- **Partial Differential Equations in Engineering (ME300B/CME204)**, Jan.–Mar. 2025: Held weekly office hours and problem-solving sessions; prepared homework solutions and graded assignments.
+- **Fluid Mechanics (ME351A)**, Sep.–Dec. 2025: Reviewed and redesigned homework problems.
 
 # Coursework
 ## Fluid mechanics
