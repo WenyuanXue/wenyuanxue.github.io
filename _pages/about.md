@@ -7,13 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. student in Mechanical Engineering at Stanford University. My research interests focus on data-driven reduced-order modeling of PDEs and Reynolds stress modeling of turbulent flows. Currently, I am advised by Prof. [Ali Mani](https://mani.stanford.edu/) and have previously worked with Prof. [Oliver Fringer](https://web.stanford.edu/~fringer/) and Prof. [Christian Linder](https://web.stanford.edu/~linder/).
+I am a third year Ph.D. student in Mechanical Engineering at Stanford University. My research interests focus on data-driven reduced-order modeling of PDEs and Reynolds stress modeling of turbulent flows. Currently, I am advised by Prof. [Ali Mani](https://mani.stanford.edu/).
 
-<div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+<!-- <div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
   <figure style="margin: 0; width: 300px; text-align: center;">
     <img src="/images/Particle_laden_flow/d0.002_rho1_2.5_rot.gif" width="300px">
   </figure>
-</div>
+</div> -->
 
 # Biography
 For more detailed information, please consult my  [CV](../files/CV.pdf).
@@ -23,6 +23,22 @@ For more detailed information, please consult my  [CV](../files/CV.pdf).
 ## Data-driven Reduced-order Modeling of PDEs
 
 My current research focuses on developing physics-informed, data-driven methods for identifying closure models in turbulent flows. I work on optimizing pseudo-spectral DNS/LES solvers and constructing minimal tensorial formulations of Reynolds stress models to study the influence of rotation on homogeneous anisotropic turbulence.
+
+### Data-driven Turbulence Modeling Framework
+
+Turbulent flows appear everywhere in engineering applications, from blood flow in arteries to combustion in engines. Understanding turbulence is critical for controlling drag, noise, mixing, and heat transfer. However, turbulence's nonlinear, multiscale dynamics make it extremely challenging to model accurately.
+
+I am developing a novel data-driven modeling framework that embeds physical symmetries to reduce model complexity and uses systematic data generation to produce representative training sets. The key innovation is using linear forcing in simple domains to reproduce the essential physics of complex scenarios without modifying the solver. This approach eliminates the cost of redeveloping solvers and enables efficient sampling of the state space with far fewer cases. 
+
+<div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+  <figure style="margin: 0; width: 500px; text-align: center;">
+    <img src="/images/Turbulence/isocontours.png" width="500px">
+    <figcaption style="font-size: 0.8em; text-align: center; width: 100%; margin-top: 10px;">Visualization of flow velocity over diverse scenarios of anisotropy</figcaption>
+  </figure>
+</div>
+
+
+This work has the potential to enable orders-of-magnitude reductions in data and computation requirements for turbulence modeling, greatly shortening design cycles and improving efficiency across aerospace, energy, and environmental engineering applications.
 
 ## Particle-resolved Simulation of Particle-laden Flows
 Direct numerical simulation (DNS) of particle-laden flows is a powerful tool for understanding and visualizing particle-fluid and particle-particle interactions. We conducted numerical studies using an in-house particle-resolved simulation (PRS) solver ([Yao et al. 2022](https://onlinelibrary.wiley.com/doi/abs/10.1002/fld.5128)), which employs the immersed boundary method to couple Eulerian and Lagrangian fields and incorporates physical-based collision models for the particle collisions. Using this solver, several cases of fluid-particle interactions were studied and presented below.
@@ -117,22 +133,4 @@ I have served as a Course Assistant for several courses at Stanford University:
 - **Partial Differential Equations in Engineering (ME300B/CME204)**, Jan.–Mar. 2025: Held weekly office hours and problem-solving sessions; prepared homework solutions and graded assignments.
 - **Fluid Mechanics (ME351A)**, Sep.–Dec. 2025: Reviewed and redesigned homework problems.
 
-# Coursework
-## Fluid mechanics
-ME 351A: Fluid Mechanics\\
-ME 351B: Fluid Mechanics\\
-CEE 262B: Transport and Mixing in Surface Water Flows\\
-ENERGY 221: Fundamentals of Multiphase Flow
-
-## Solid mechanics
-CEE 310: Computational Solid Mechanics\\
-CEE 314: Computational Poromechanics \\
-CEE 315: Plasticity Modeling and Computation
-
-## Numerical methods
-CME 206: Introduction to Numerical Methods for Engineering\\
-CME 302: Numerical Linear Algebra\\
-CME 303: Partial Differential Equations of Applied Mathematics\\
-CME 322: Spectral Methods in Computational Physics\\
-AA 214: Numerical Methods for Compressible Flows 
 

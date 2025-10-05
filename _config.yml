@@ -21,7 +21,7 @@ repository               : "wenyuanxue/wenyuanxue.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "wenyuan.jpg"
+  avatar           : "profile.jpeg"
   name             : "Wenyuan Xue"
   pronouns         : "He/him/his" 
   bio              : "Ph.D. student in Mechanical Engineering"
