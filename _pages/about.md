@@ -22,7 +22,7 @@ For more detailed information, please consult my  [CV](../files/CV.pdf).
 
 ## Data-driven Reduced-order Modeling of PDEs
 
-My current research focuses on developing physics-informed, data-driven methods for identifying closure models in turbulent flows. I work on optimizing pseudo-spectral DNS/LES solvers and constructing minimal tensorial formulations of Reynolds stress models to study the influence of rotation on homogeneous anisotropic turbulence.
+My current research focuses on developing physics-informed, data-driven methods for identifying closure models in PDEs. Compared to traditional approaches that require extensive data generation across different geometries and boundary conditions, we use a systematic forcing method that enables efficient sampling of the state space with far fewer cases. We apply this framework to both linear systems and general PDEs, with turbulence being an important application. 
 
 ### Data-driven Turbulence Modeling Framework
 
@@ -31,9 +31,16 @@ Turbulent flows appear everywhere in engineering applications, from blood flow i
 I am developing a novel data-driven modeling framework that embeds physical symmetries to reduce model complexity and uses systematic data generation to produce representative training sets. The key innovation is using linear forcing in simple domains to reproduce the essential physics of complex scenarios without modifying the solver. This approach eliminates the cost of redeveloping solvers and enables efficient sampling of the state space with far fewer cases. 
 
 <div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
-  <figure style="margin: 0; width: 500px; text-align: center;">
-    <img src="/images/Turbulence/isocontours.png" width="500px">
+  <figure style="margin: 0; width: 700px; text-align: center;">
+    <img src="/images/Turbulence/isocontours.png" width="700px">
     <figcaption style="font-size: 0.8em; text-align: center; width: 100%; margin-top: 10px;">Visualization of flow velocity over diverse scenarios of anisotropy</figcaption>
+  </figure>
+</div>
+
+<div align="center" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+  <figure style="margin: 0; width: 600px; text-align: center;">
+    <img src="/images/Turbulence/rot_compare.png" width="600px">
+    <figcaption style="font-size: 0.8em; text-align: center; width: 100%; margin-top: 10px;">Influence of rotation on Reynolds stress obtained from various forcing scenarios</figcaption>
   </figure>
 </div>
 
